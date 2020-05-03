@@ -6,7 +6,7 @@ repository.
 
 * `genebean-piweatherrock` represents a Puppet module that will be used for
   deploying and configuring PiWeatherRock
-* The core PiWeatherRock repository will be transitioned into a Python package
+* The core `PiWeatherRock` repository will be transitioned into a Python package
   that contains the core components of the application.
 * Each of the `piweatherrock-*` repositories will represent a single Python
   package that can be consumed from PyPI.
@@ -57,3 +57,54 @@ from piweatherrock import plugin_hourly
 
 The web-based configuration utility is an external package so that it can
 at a different pace than the core application.
+
+## Diagram of this repo
+
+```bash
+.
+├── PiWeatherRock/
+│   ├── LICENSE
+│   ├── README.md
+│   ├── piweatherrock/
+│   │   ├── __init__.py
+│   │   ├── plugin_daily/
+│   │   │   └── __init__.py
+│   │   ├── plugin_hourly/
+│   │   │   └── __init__.py
+│   │   ├── plugin_info/
+│   │   │   └── __init__.py
+│   │   └── weather.py
+│   └── setup.py
+├── README.md
+├── genebean-piweatherrock/
+│   ├── LICENSE
+│   ├── README.md
+│   └── metadata.json
+├── piweatherrock-data-climacell/
+│   ├── LICENSE
+│   ├── README.md
+│   ├── piweatherrock/
+│   │   └── data_climacell/
+│   │       ├── __init__.py
+│   │       └── pwr_data.py
+│   └── setup.py
+├── piweatherrock-plugin-speedtest/
+│   ├── LICENSE
+│   ├── README.md
+│   ├── piweatherrock/
+│   │   └── plugin_speedtest/
+│   │       └── __init__.py
+│   └── setup.py
+└── piweatherrock-webconfig/
+    ├── LICENSE
+    ├── README.md
+    ├── piweatherrock/
+    │   └── webconfig/
+    │       ├── __init__.py
+    │       └── html/
+    │           ├── config.html
+    │           └── style.css
+    └── setup.py
+
+16 directories, 27 files
+```
