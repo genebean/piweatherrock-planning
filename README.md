@@ -99,6 +99,13 @@ at a different pace than the core application.
 │   │       ├── __init__.py
 │   │       └── pwr_data.py
 │   └── setup.py
+├── piweatherrock-plugin-rss/
+│   ├── LICENSE
+│   ├── README.md
+│   ├── piweatherrock/
+│   │   └── plugin_rss/
+│   │       └── __init__.py
+│   └── setup.py
 ├── piweatherrock-plugin-speedtest/
 │   ├── LICENSE
 │   ├── README.md
@@ -117,5 +124,5 @@ at a different pace than the core application.
     │           └── style.css
     └── setup.py
 
-16 directories, 27 files
+19 directories, 31 files
 ```
