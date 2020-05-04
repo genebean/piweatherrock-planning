@@ -67,7 +67,7 @@ from piweatherrock import plugin_hourly
 ## Web-based configuration package
 
 The web-based configuration utility is an external package so that it can
-at a different pace than the core application.
+evolve at a different pace than the core application.
 
 ## Diagram of this repo
 
