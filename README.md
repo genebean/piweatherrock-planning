@@ -1,15 +1,26 @@
 # PiWeatherRock Planning Document
 
-This repository represents a blueprint for how the components of PiWeatherRock
-will be structured / restructured. Each top-level folder represents a git
+This repository represents a blueprint for how the components of
+[PiWeatherRock](https://piweatherrock.technicalissues.us) will be
+structured / restructured. Each top-level folder represents a git
 repository.
 
-* `genebean-piweatherrock` represents a Puppet module that will be used for
+- `genebean-piweatherrock` represents a Puppet module that will be used for
   deploying and configuring PiWeatherRock
-* The core `PiWeatherRock` repository will be transitioned into a Python package
+- The core `PiWeatherRock` repository will be transitioned into a Python package
   that contains the core components of the application.
-* Each of the `piweatherrock-*` repositories will represent a single Python
+- Each of the `piweatherrock-*` repositories will represent a single Python
   package that can be consumed from PyPI.
+
+Much of what you will read below is the result of reading the
+[Packaging namespace packages](https://packaging.python.org/guides/packaging-namespace-packages/)
+guide from [python.org](https://www.python.org).
+
+- [Python Namespacing](#python-namespacing)
+- [Weather providers](#weather-providers)
+- [Plugins](#plugins)
+- [Web-based configuration package](#web-based-configuration-package)
+- [Diagram of this repo](#diagram-of-this-repo)
 
 ## Python Namespacing
 
