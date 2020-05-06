@@ -73,16 +73,19 @@ evolve at a different pace than the core application.
 
 ```bash
 .
+├── LICENSE
 ├── PiWeatherRock/
 │   ├── LICENSE
 │   ├── README.md
 │   ├── piweatherrock/
 │   │   ├── __init__.py
-│   │   ├── plugin_daily/
-│   │   │   └── __init__.py
-│   │   ├── plugin_hourly/
-│   │   │   └── __init__.py
 │   │   ├── plugin_info/
+│   │   │   └── __init__.py
+│   │   ├── plugin_weather_common/
+│   │   │   └── __init__.py
+│   │   ├── plugin_weather_daily/
+│   │   │   └── __init__.py
+│   │   ├── plugin_weather_hourly/
 │   │   │   └── __init__.py
 │   │   └── weather.py
 │   └── setup.py
@@ -124,5 +127,5 @@ evolve at a different pace than the core application.
     │           └── style.css
     └── setup.py
 
-19 directories, 31 files
+20 directories, 33 files
 ```
